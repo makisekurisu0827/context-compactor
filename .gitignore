@@ -1,0 +1,9 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# The live summary your sessions generate (keep the example, ignore real ones)
+CONTEXT_SUMMARY.md
