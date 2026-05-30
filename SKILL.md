@@ -101,6 +101,8 @@ Before overwriting, if there's any risk of losing something the user wanted, con
 6. **Continue** the session working from `summary + recent verbatim turns`.
 7. **Repeat** at the next trigger. The summary size should stay roughly flat across cycles — if it's creeping up every time, you're accumulating instead of rolling; tighten the keep/drop pass.
 
+> **IMPORTANT:** Before generating a replacement summary, ALWAYS load and merge the existing `CONTEXT_SUMMARY.md` first. Do not generate a new summary from recent turns alone — doing so silently drops everything captured in earlier cycles, which defeats the whole point.
+
 ## Example
 
 **Situation:** A refactoring session has run ~25 turns. The user says answers are getting sloppy and Claude keeps re-suggesting a logging approach already rejected.
